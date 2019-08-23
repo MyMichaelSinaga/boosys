@@ -1,2 +1,2 @@
 # boosys
- Technical Test from KontrakHukum
+Test Coding from KontrakHukum
