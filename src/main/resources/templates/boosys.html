@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Booking System</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+	<link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+	<link href="../static/datatables/jquery.dataTables.css" rel="stylesheet" th:href="@{/datatables/jquery.dataTables.css}" />
+</head>
+<body>
+
+	<div class="container-fluid">
+			
+			<div class="row">
+				<div class="col-md-10">
+					<div class="form-group pull-right">
+						<label id="lbl-tanggal"></label>
+					</div>
+				</div>
+			</div>
+			<br></br>
+			
+		<div id="all" style="margin-left : 150px">
+			<div class="row">
+				<div id="order">
+					<div class="col-md-1">
+						<div class="form-group">
+							<label id="">Order Id</label>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="form-group">
+							<input type="text" class="form-control white" id="inp-order" placeholder="Order Id"/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Customer</label>
+					</div>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="form-group">
+						<input class="form-control" type="text"  id="inp-search" placeholder="Customer Id" list="datalist-customer"/>
+						<datalist id="datalist-customer">
+						</datalist>
+					</div>
+				</div>
+				
+				<div class="col-md-1">
+					<div class="form-group">
+						<button class="btn btn-primary no-radius" id="btn-search">Search</button>
+					</div>
+				</div>
+
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Film</label>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-group">
+						<input class="form-control" type="text" id="inp-search-film" placeholder="Film Id" list="datalist-film"/>
+						<datalist id="datalist-film"></datalist>
+					</div>
+				</div>
+				
+				<div class="col-md-1">
+					<div class="form-group">
+						<button class="btn btn-primary no-radius" id="btn-search-film">Search</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Name</label>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<input class="form-control white" type="text" id="inp-nama" placeholder="Name" disabled="disabled"/>
+					</div>
+				</div>
+				
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Film Name</label>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<input class="form-control white" type="text"  id="inp-nama-film" placeholder="Film Name" disabled="disabled"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Phone</label>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<input class="form-control  white" type="text" id="inp-no-telp" placeholder="Phone" disabled="disabled"/>
+					</div>
+				</div>
+				
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Time</label>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<input class="form-control white" type="text"  id="inp-time" placeholder="Time" disabled="disabled"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Email</label>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<input class="form-control white" type="text" id="inp-email" placeholder="Email" disabled="disabled"/>
+					</div>
+				</div>
+				
+				<div class="col-md-1">
+					<div class="form-group">
+						<label>Buy</label>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<input class="form-control" type="number" id="inp-buy" placeholder="Buy" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-10">
+					<div class="button-group  pull-right">
+						<button class="btn btn-inline btn-primary no-radius" id="btn-order">Order</button>
+						<button class="btn btn-inline btn-primary no-radius" id="btn-reset">Reset</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/boosys.js}" src="../static/js/boosys.js"></script>
+	<script type="text/javascript" th:src="@{/datatables/jquery.dataTables.min.js}"  src="../static/datatables/jquery.dataTables.min.js"></script>
+
+</body>
+</html>

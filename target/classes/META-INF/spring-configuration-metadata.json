@@ -1,0 +1,12 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.test.BeanConfig",
+      "name": "spring.datasource",
+      "sourceMethod": "public javax.activation.DataSource boosys() ",
+      "type": "javax.activation.DataSource"
+    }
+  ],
+  "properties": []
+}
